@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "SSUWT Map"
-include ':app'
+include(":app")

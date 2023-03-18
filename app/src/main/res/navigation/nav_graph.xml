@@ -11,10 +11,10 @@
         android:label="fragment_main_building"
         tools:layout="@layout/fragment_main_building" />
     <fragment
-        android:id="@+id/laborathoryBuilding"
-        android:name="com.xolary.ssuwtmap.laborathory.LaborathoryBuilding"
+        android:id="@+id/laboratoryBuilding"
+        android:name="com.xolary.ssuwtmap.laborathory.LaboratoryBuilding"
         android:label="fragment_laborathory_building"
-        tools:layout="@layout/fragment_laborathory_building" />
+        tools:layout="@layout/fragment_laboratory_building" />
     <fragment
         android:id="@+id/secondBuilding"
         android:name="com.xolary.ssuwtmap.second.SecondBuilding"

@@ -63,4 +63,6 @@ dependencies {
     implementation("androidx.room:room-ktx:2.4.3")
 
     implementation("com.jsibbold:zoomage:1.3.1")
+
+    implementation ("com.github.yuriy-budiyev:code-scanner:2.3.2")
 }

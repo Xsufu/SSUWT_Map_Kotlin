@@ -2,7 +2,7 @@
     <string name="app_name">SSUWT Map</string>
 
     <string name="header_main"><b>Главный</b></string>
-    <string name="header_lab"><b>Лаборатория</b></string>
+    <string name="header_lab"><b>Лаб-ый</b></string>
     <string name="header_sec"><b>Корпус №2</b></string>
     <string name="header_ways"><b>Маршруты</b></string>
 
@@ -15,7 +15,12 @@
     <string name="six">6</string>
     <string name="seven">7</string>
     <string name="eight">8</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="header_lab_full">Лабораторный</string>
+    <string name="from">Откуда</string>
+    <string name="to">Куда</string>
+    <string name="accept">Открыть в приложении Яндекс.Карты</string>
+    <string name="descToSpinnerFrom">Выпадающий список мест отправления</string>
+    <string name="descToSpinnerTo">Выпадающий список мест прибытия</string>
 </resources>

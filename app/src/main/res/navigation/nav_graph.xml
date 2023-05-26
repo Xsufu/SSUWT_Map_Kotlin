@@ -20,4 +20,8 @@
         android:name="com.xolary.ssuwtmap.second.SecondBuilding"
         android:label="fragment_second_building"
         tools:layout="@layout/fragment_second_building" />
+    <fragment
+        android:id="@+id/routesFragment"
+        android:name="com.xolary.ssuwtmap.RoutesFragment"
+        android:label="RoutesFragment" />
 </navigation>

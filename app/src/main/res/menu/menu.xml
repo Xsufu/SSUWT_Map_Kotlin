@@ -19,4 +19,9 @@
         android:id="@+id/routesFragment"
         android:title="@string/header_ways"
         android:icon="@drawable/icon_route" />
+
+    <item
+        android:id="@+id/scannerFragment"
+        android:title="@string/qrScanner"
+        android:icon="@drawable/outline_qr_code_scanner_24" />
 </menu>

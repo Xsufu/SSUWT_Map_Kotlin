@@ -1,11 +1,10 @@
 package com.xolary.ssuwtmap.laborathory
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.xolary.ssuwtmap.R
 import com.xolary.ssuwtmap.databinding.FragmentLaboratoryBuildingBinding
 
@@ -16,8 +15,6 @@ class LaboratoryBuilding : Fragment() {
     companion object {
         fun newInstance() = LaboratoryBuilding()
     }
-
-    private lateinit var viewModel: LaborathoryBuildingViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -48,11 +45,4 @@ class LaboratoryBuilding : Fragment() {
             }
         }
     }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(LaborathoryBuildingViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
 }

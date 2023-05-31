@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_graph"
+    app:startDestination="@id/enterFragment">
+
+    <fragment
+        android:id="@+id/enterFragment"
+        android:name="com.xolary.ssuwtmap.login.EnterFragment"
+        android:label="fragment_enter"
+        tools:layout="@layout/fragment_enter">
+        <action
+            android:id="@+id/action_enterFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_enterFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/enterFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="login"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="password"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="isBack"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.xolary.ssuwtmap.login.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registrationFragment_to_enterFragment"
+            app:destination="@id/enterFragment"
+            app:popUpTo="@id/enterFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.xolary.ssuwtmap.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_enterFragment"
+            app:destination="@id/enterFragment"
+            app:popUpTo="@id/enterFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_qrFragment"
+            app:destination="@id/qrFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrFragment"
+        android:name="com.xolary.ssuwtmap.scannerFragment.QrFragment"
+        android:label="QrFragment"
+        tools:layout="@layout/fragment_qr" />
+</navigation>

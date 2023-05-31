@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:fontFamily="@font/noto_serif"
+                android:fontFamily="@font/sf_pro_display_semibold"
                 android:text="@string/header_ways"
                 android:textColor="#2E2E2E"
                 android:textSize="18sp"
@@ -81,7 +81,7 @@
                 android:layout_height="52dp"
                 android:layout_marginTop="174dp"
                 android:text="@string/accept"
-                android:textStyle="bold"
+                android:fontFamily="@font/sf_pro_display_semibold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spinnerTo" />

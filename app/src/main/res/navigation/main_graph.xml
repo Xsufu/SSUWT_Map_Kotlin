@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainBuilding">
+    <fragment
+        android:id="@+id/mainBuilding"
+        android:name="com.xolary.ssuwtmap.mainBuilding.MainBuilding"
+        tools:layout="@layout/fragment_main_building"
+        android:label="fragment_main_building" />
+    <fragment
+        android:id="@+id/routesFragment"
+        android:name="com.xolary.ssuwtmap.RoutesFragment"
+        android:label="RoutesFragment"
+        tools:layout="@layout/fragment_routes" />
+    <fragment
+        android:id="@+id/laboratoryBuilding"
+        android:name="com.xolary.ssuwtmap.laborathory.LaboratoryBuilding"
+        tools:layout="@layout/fragment_laboratory_building"
+        android:label="fragment_laborathory_building" />
+    <fragment
+        android:id="@+id/secondBuilding"
+        android:name="com.xolary.ssuwtmap.second.SecondBuilding"
+        tools:layout="@layout/fragment_second_building"
+        android:label="fragment_second_building" />
+    <fragment
+        android:id="@+id/scannerFragment"
+        android:name="com.xolary.ssuwtmap.scannerFragment.ScannerFragment"
+        android:label="ScannerFragment"
+        tools:layout="@layout/fragment_scanner" />
+</navigation>
+

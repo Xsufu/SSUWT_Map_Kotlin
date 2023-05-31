@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ru">
     <string name="app_name">SSUWT Map</string>
 
     <string name="header_main"><b>Главный</b></string>
@@ -23,4 +23,25 @@
     <string name="accept">Открыть в приложении Яндекс.Карты</string>
     <string name="descToSpinnerFrom">Выпадающий список мест отправления</string>
     <string name="descToSpinnerTo">Выпадающий список мест прибытия</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Вход</string>
+    <string name="registration">Создать аккаунт</string>
+    <string name="loginWelcome">Добро пожаловать!</string>
+    <string name="loginAnnotation">Войдите в аккаунт для доступа к приложению</string>
+    <string name="regWelcome">Создание нового аккаунта</string>
+    <string name="lastname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="group">Группа</string>
+    <string name="backToLogin">Войти в уже существующий аккаунт</string>
+    <string name="qrScanner">QR-Сканер</string>
 </resources>

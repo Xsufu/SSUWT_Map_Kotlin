@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scanner_graph"
+    app:startDestination="@id/qrFragment">
+
+    <fragment
+        android:id="@+id/qrFragment"
+        android:name="com.xolary.ssuwtmap.scannerFragment.QrFragment"
+        android:label="QrFragment"
+        tools:layout="@layout/fragment_qr">
+        <action
+            android:id="@+id/action_qrFragment_to_scannerResultFragment"
+            app:destination="@id/scannerResultFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/scannerResultFragment"
+        android:name="com.xolary.ssuwtmap.scannerFragment.ScannerResultFragment"
+        android:label="ScannerResultFragment"
+        tools:layout="@layout/fragment_scanner_result">
+        <argument
+            android:name="building"
+            app:argType="string" />
+        <argument
+            android:name="floor"
+            app:argType="string" />
+        <argument
+            android:name="imageSrc"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_scannerResultFragment_to_qrFragment"
+            app:destination="@id/qrFragment"
+            app:popUpTo="@id/qrFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
